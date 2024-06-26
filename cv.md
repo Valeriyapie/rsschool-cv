@@ -45,7 +45,7 @@ Hi, I'm Valeriya! I live in St. Petersburg and work as a dispatcher in an airlin
   
 
 ### Code example
-function  finalGrade  (exam, projects)  {
+```function  finalGrade  (exam, projects)  {
   if  (exam > 90 || projects > 10){return 100;
     } 
   else if(exam > 75 && projects >= 5){return 90;
@@ -55,7 +55,7 @@ function  finalGrade  (exam, projects)  {
   else  {return 0;
   }
 }
-
+```
 
 ---  
 ### Languages
