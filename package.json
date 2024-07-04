@@ -1,0 +1,20 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://valeriyapie.github.io/rsschool-cv/cv\r https://valeriyapie.github.io/rsschool-cv/",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/sass/style.scss:src/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeriyapie/rsschool-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeriyapie/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/valeriyapie/rsschool-cv#readme"
+}
