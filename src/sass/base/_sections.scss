@@ -1,0 +1,197 @@
+.about-me__left{
+  background-color: $color-back-accent-3;
+}
+.about-me__right{
+  @extend %padding-text-block;
+  background-color: $color-back-secondary;
+}
+.about-me__text{
+  @include font(2.4rem, 3rem, 500);
+}
+.code__block{
+  overflow: hidden;
+}
+.code__left{
+  background-color: $color-back-accent-1;
+}
+.code__right{
+  background-color: $color-back-secondary;
+  padding: 5% 5%;
+}
+.code__subtittle{
+  text-align: center;
+}
+.code__keyword{
+  color: #d44c12;
+}
+.code__function-title{
+  color: #2bee6f;
+}
+.code__logic-operator{
+  color: #f5da57;
+}
+.courses__right{
+  background-color: $color-back-accent-3;
+}
+.courses__left{
+  background-color: $color-back-primary;
+  @extend %padding-text-block;
+}
+.courses__list{
+  list-style: circle;
+}
+.courses__list__item:not(:last-child){
+  margin-bottom: 25px;
+}
+.languages__left{
+  background-color: $color-back-primary;
+  @extend %padding-text-block;
+}
+.languages__list{
+  list-style: circle;
+  &>li{
+    @include font(3rem, 3rem, 500);
+    margin-bottom: 54px;
+  }
+}
+.languages__right{
+  background-color: $color-back-accent-2;
+}
+.navigation{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__link{
+  @include font(1.5rem, 1.7rem, 500);
+  @extend %transition;
+  text-decoration: none;
+  color: inherit;
+  &:hover,:focus{
+    color: $color-text-accent;
+  }
+}
+.portfolio__left{
+  background-color: $color-back-accent-2;
+}
+.portfolio__right{
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__item{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-page;
+    opacity: 0.2;
+  }
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+.portfolio-item__image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  }
+.portfolio-item__description{
+  @extend %transition;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  font-size: 20px;
+  background-color: $color-back-primary;
+  padding: 20px 40px;
+  opacity: 0;
+  &_visible{
+    opacity: 1;
+    transform: translate(-50% -50%);
+  }
+}
+.promo__photo_block{
+  display: flex;
+  align-items: center;
+}
+.photo{
+  width: 100%;
+}
+.promo__info_block{
+  order: 2;
+  padding: 100px 0;
+  background-color: $color-back-primary;
+  display: flex;
+  justify-content: center;
+}
+.promo__text{
+  @include font(2rem, 2rem, 500, italic);
+  max-width: 450px;
+}
+.promo__title{
+  margin-bottom: 30px;
+}
+.skills__list{
+  list-style: none;
+}
+.skills__left-content{
+  background-color: $color-back-primary;
+  @extend %padding-text-block;
+}
+.skills__right-content{
+  background-color: $color-back-accent-1;
+}
+.skill{
+  background-color: $color-light;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+  &:not(:last-child){
+    margin-bottom: 40px;
+  }
+}
+.skill-text{
+  @include font(1.4rem, 3rem, 600);
+  letter-spacing: 3.5px;
+  position: relative;
+  z-index: 3;
+  color: $color-text-light;
+  text-transform: uppercase;
+  }
+.skill-progress{
+  position: absolute;
+  left: 0;
+  height: 20px;
+  background-color: $color-back-accent-1;
+  z-index: 2;
+  &_html{
+    width: 80%;
+  }
+  &_sass{
+    width: 50%;
+  }
+  &_js{
+    width: 40%;
+  }
+  &_figma{
+    width: 80%;
+  }
+  &_git{
+    width: 60%;
+  }
+  &_vscode{
+    width: 80%;
+  }
+}
