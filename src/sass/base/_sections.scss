@@ -120,9 +120,13 @@
 }
 .promo__photo_block{
   display: flex;
-  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
-
+.photo{
+  width: 100%;
+  height: auto;
+}
 .promo__info_block{
   order: 2;
   padding: 100px 0;
@@ -136,6 +140,9 @@
 }
 .promo__title{
   margin-bottom: 30px;
+  @media screen and (max-width: 920px) {
+    text-align: center;
+}
 }
 .skills__list{
   list-style: none;
